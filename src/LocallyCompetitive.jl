@@ -1,5 +1,5 @@
 
-module LCA
+module LocallyCompetitive
 using LinearAlgebra
 using Statistics
 export lca

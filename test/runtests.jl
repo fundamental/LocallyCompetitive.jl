@@ -1,4 +1,4 @@
-using LCA
+using LocallyCompetitive
 using Base.Test
 
 # Testing params
@@ -20,7 +20,7 @@ vals[sortperm(rand(M))[k+1:end]] = 0
 sig = basis*vals
 
 # Learn 'vals' based upon sig and the basis
-out = LCA.lca(sig, basis)
+out = LocallyCompetitive.lca(sig, basis)
 
 recon = basis*out
 
