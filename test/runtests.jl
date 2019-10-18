@@ -1,5 +1,6 @@
 using LocallyCompetitive
 using Test
+using Random
 
 # Testing params
 M = 100
@@ -7,7 +8,7 @@ N = 100
 
 k = 10
 
-srand(0)
+Random.seed!(0)
 
 # Dictionary
 basis = randn(M,N)
