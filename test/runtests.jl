@@ -1,6 +1,7 @@
 using LocallyCompetitive
 using Test
 using Random
+using Statistics
 
 # Testing params
 M = 100
