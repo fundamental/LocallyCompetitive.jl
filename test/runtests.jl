@@ -1,5 +1,5 @@
 using LocallyCompetitive
-using Base.Test
+using Test
 
 # Testing params
 M = 100
