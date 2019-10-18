@@ -1,4 +1,7 @@
+
 module LCA
+using LinearAlgebra
+using Statistics
 export lca
 
 #Make all columns of the input matrix have a norm of 1

@@ -1,11 +1,14 @@
 # Random Dictionary based example
 using PyPlot
+using Statistics
+
+include("../src/LCA.jl")
 
 dim     = 64
 n_elems = 1024;
 D       = randn(dim,n_elems);
 s       = randn(dim)
-sparse  = lca(s , D, T_soft=0.4)
+sparse  = LCA.lca(s, D, T_soft=0.4)
 
 println("Original  Sparsity = ", sum(s.!=0))
 println("Original  RMS      = ", sqrt(mean(s.^2)))
@@ -19,6 +22,7 @@ title("Sparse Realization of input")
 xlabel("Dictionary Element")
 ylabel("Magnitude")
 stem(sparse)
+savefig("lca-example.png")
 
 figure(2)
 PyPlot.clf()
