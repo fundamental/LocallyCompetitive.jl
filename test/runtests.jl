@@ -15,7 +15,7 @@ basis = randn(M,N)
 
 # Make k sparse signal
 vals  = rand(M)
-vals[sortperm(rand(M))[k+1:end]] = 0
+vals[sortperm(rand(M))[k+1:end]] .= 0
 
 # Input signal with k sparse structure
 sig = basis*vals
