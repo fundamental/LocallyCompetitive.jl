@@ -3,7 +3,7 @@ using PyPlot
 using Statistics
 using Random
 
-include("../src/LCA.jl")
+include("../src/LocallyCometitive.jl")
 Random.seed!(0xcafebeef)
 
 # First we create 'dim' basis functions, each consisting of 'n_elm' samples.

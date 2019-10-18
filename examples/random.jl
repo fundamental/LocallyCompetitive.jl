@@ -2,7 +2,7 @@
 using PyPlot
 using Statistics
 
-include("../src/LCA.jl")
+include("../src/LocallyCometitive.jl")
 
 dim     = 64
 n_elems = 1024;
